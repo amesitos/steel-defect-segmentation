@@ -1,0 +1,84 @@
+# ============================================
+#  ENTORNOS Y CONFIGURACIÓN
+# ============================================
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# ============================================
+#  IDEs
+# ============================================
+.vscode/
+.idea/
+
+# ============================================
+#  ARCHIVOS DEL SISTEMA
+# ============================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
+Thumbs.db
+
+# ============================================
+#  DATASETS 
+# ============================================
+data/train_images/
+data/test_images/
+data/*.csv
+data/*.zip
+data/*.tar
+data/*.gz
+
+# PERMITIR carpeta data (pero no su contenido pesado)
+!data/
+!data/README.md
+
+# ============================================
+#  MODELOS Y CHECKPOINTS
+# ============================================
+outputs/checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# ============================================
+#  LOGS Y SALIDAS AUTOMÁTICAS
+# ============================================
+outputs/logs/
+outputs/*.csv
+outputs/*.txt
+
+# ============================================
+#  VISUALIZACIONES GENERADAS
+# ============================================
+outputs/*.png
+outputs/plots/
+outputs/predictions/
+outputs/progress/
+
+# permitir estructura outputs
+!outputs/
+
+# ============================================
+#  NOTEBOOKS TEMPORALES
+# ============================================
+.ipynb_checkpoints/
+*.ipynb_save
+*.ipynb_checkpoint
+
+# ============================================
+#  BUILD
+# ============================================
+build/
+dist/
+*.egg-info/
+
+# ============================================
+#  CACHES GENERALES
+# ============================================
+.cache/
+torch_cache/
