@@ -7,7 +7,7 @@ import logging
 from torch.utils.data import DataLoader
 
 from models.unet_resnet18 import build_model
-from src.dataset import SteelDefectDataset
+from data.dataset import SteelDefectDataset
 from src.log_config import setup_logger
 
 # ------------------------------

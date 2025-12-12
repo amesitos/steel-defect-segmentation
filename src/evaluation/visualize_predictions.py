@@ -8,8 +8,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 from models.unet_resnet18 import build_model
-from src.dataset import SteelDefectDataset
-from src.utils_rle import rle_decode
+from data.dataset import SteelDefectDataset
+from data.utils_rle import rle_decode
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"🔍 Usando dispositivo para predicción: {DEVICE}")

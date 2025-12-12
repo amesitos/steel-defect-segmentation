@@ -15,7 +15,7 @@ import csv
 import time
 
 from models.unet_resnet18 import build_model
-from src.dataset import SteelDefectDataset
+from data.dataset import SteelDefectDataset
 from src.log_config import setup_logger
 
 import matplotlib.pyplot as plt
