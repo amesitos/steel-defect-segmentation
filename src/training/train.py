@@ -1,8 +1,8 @@
 import sys
 import os
 
-ROOT = os.path.dirname(os.path.dirname(__file__))
-sys.path.append(ROOT)
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+sys.path.insert(0, PROJECT_ROOT)
 
 import torch
 import pandas as pd
@@ -15,7 +15,7 @@ import csv
 import time
 
 from models.unet_resnet18 import build_model
-from data.dataset import SteelDefectDataset
+from src.data.dataset import SteelDefectDataset
 from src.log_config import setup_logger
 
 import matplotlib.pyplot as plt

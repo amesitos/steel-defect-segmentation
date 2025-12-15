@@ -2,7 +2,7 @@ import cv2
 import torch
 import numpy as np
 from torch.utils.data import Dataset
-from data.utils_rle import rle_decode
+from src.data.utils_rle import rle_decode
 
 
 class SteelDefectDataset(Dataset):
